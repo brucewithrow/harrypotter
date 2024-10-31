@@ -1,0 +1,34 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+<div class="px-4 text-center">
+    <img id="hp" class="d-block mx-auto mb-4" src="images/potter.png" alt="">
+    <h1 class="display-5 fw-bold text-body-emphasis"><%= title %></h1>
+    <div class="col-lg-6 mx-auto">
+      <% if (locals.cover) { %>
+      <div class="row"><div class="col col-8"><p class="lead mb-4 cover d-block align-middle"><%= description %></p></div><div class="col col-4"><img class="cover" src="<%= cover %>"></div></div>
+      <% } %>
+      <% if (locals.nickname) { %>
+        <span class="bold"><p class="lead mb-4">Nickname: </span> <%= nickname %></p>
+        <span class="bold"><p class="lead mb-4">House: </span> <%= house %></p>
+        <% } %>
+      <% if (locals.founder) { %>
+      <span class="bold"><p class="lead mb-4">Founded by: </span> <%= founder %></p>
+      <span class="bold"><p class="lead mb-4">Colors: </span> <%= colors %></p>
+      <span class="bold"><p class="lead mb-4">Animal: </span> <%= animal %></p>
+      <% } %>
+      <% if (locals.use) { %>
+        <p class="lead mb-4"><%= use %></p>
+      <% } %>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center pt-5">
+        <a href="/book" class="btn btn-primary btn-sm px-4 gap-3" role="button">Random Book</a>
+        <a href="/character" class="btn btn-success btn-sm px-4" role="button">Random Character</a>
+        <a href="/house" class="btn btn-danger btn-sm px-4" role="button">Random House</a>
+        <a href="/spell" class="btn btn-warning btn-sm px-4" role="button">Random Spell</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs') %>

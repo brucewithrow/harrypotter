@@ -1,0 +1,16 @@
+body {
+    background-image: url('../images/3WPYuy.jpg');
+    margin-top: 0;
+}
+
+#hp {
+    height: 300px;
+}
+
+.cover {
+   height: 408px;
+}
+
+.bold {
+    font-weight: 700;
+}
