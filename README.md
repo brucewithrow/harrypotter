@@ -3,6 +3,8 @@
 
 This app will query random information about the Harry Potter series using the PotterAPI.
 
+***Disclaimer: These files contain copyrighted images and are not intended for publication.***
+
 ## Requirements
 
 1. Node.js installed locally
