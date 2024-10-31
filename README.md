@@ -10,10 +10,8 @@ This app will query random information about the Harry Potter series using the P
 ## Installation
 
 1. Clone the git repository
-
 2. Install required dependencies
         `$> npm i`
-
 3. Update node packages (optional)
         `$> npm audit fix`
 
