@@ -19,6 +19,8 @@ This app will query random information about the Harry Potter series using the P
 
 ## Run the app
 
-Open your browser and navigate to `localhost:3000`
+1. Navigate to the directory where 'index.js' resides
+2. Start the web server `$> nodemon index.js`
+3. Open your browser and navigate to `localhost:3000`
 
 
