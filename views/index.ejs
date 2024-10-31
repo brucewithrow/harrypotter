@@ -5,18 +5,26 @@
     <img id="hp" class="d-block mx-auto mb-4" src="images/potter.png" alt="">
     <h1 class="display-5 fw-bold text-body-emphasis"><%= title %></h1>
     <div class="col-lg-6 mx-auto">
+
+      <%# display random book info %>
       <% if (locals.cover) { %>
       <div class="row"><div class="col col-8"><p class="lead mb-4 cover d-block align-middle"><%= description %></p></div><div class="col col-4"><img class="cover" src="<%= cover %>"></div></div>
       <% } %>
+
+      <%# display random character info %>
       <% if (locals.nickname) { %>
         <span class="bold"><p class="lead mb-4">Nickname: </span> <%= nickname %></p>
         <span class="bold"><p class="lead mb-4">House: </span> <%= house %></p>
         <% } %>
+
+      <%# display random house info %>
       <% if (locals.founder) { %>
       <span class="bold"><p class="lead mb-4">Founded by: </span> <%= founder %></p>
       <span class="bold"><p class="lead mb-4">Colors: </span> <%= colors %></p>
       <span class="bold"><p class="lead mb-4">Animal: </span> <%= animal %></p>
       <% } %>
+
+      <%# display random spell info %>
       <% if (locals.use) { %>
         <p class="lead mb-4"><%= use %></p>
       <% } %>
